@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.header {
+  background-image: url("/img/Img_banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50rem;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+}
+.banner_texto {
+  color: white;
+  position: relative;
+  z-index: 2;
+  font-size: 50px;
+  text-align: center;
+  top: 8rem;
+  width: 60%;
+  margin: 0 auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+
